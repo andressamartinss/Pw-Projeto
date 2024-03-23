@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Inválido</title>
+    <style>
+       body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos da página de erro */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.error-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #ce85ce;
+}
+
+p {
+    color: #333;
+}
+
+.a {
+    background-color: #ce85ce; /* Adicione a cor de fundo desejada */
+    border: 1px solid#ce85ce; /* Adicione a cor da borda desejada */
+    transition: background-color .5s, color .5s; /* Adicione transição para a cor de fundo e a cor do texto */
+    color: #fff; /* Adicione a cor do texto desejada */
+}
+
+.a:hover {
+    background-color: #fff;
+    color: #ce85ce;
+}
+
+
+/* Estilos do formulário */
+.content {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    background-color: #ce85ce;
+    width: 0%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h2>Acesso Inválido</h2>
+        <p>O acesso a esta página é inválido. Certifique-se de ter as credenciais corretas.</p>
+        <p><a href="usumenu.php">Voltar</a></p>
+    </div>
+</body>
+</html>

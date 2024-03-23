@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu Principal</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ce93ce, #FFFFFF);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      text-align: center;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu-item {
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+    }
+
+    .sub-menu {
+      display: none;
+      position: absolute;
+      background: #ce85ce;
+      border-radius: 20px;
+      padding: 10px 0;
+      z-index: 1;
+    }
+
+    .menu-item:hover .sub-menu {
+      display: block;
+    }
+
+    .menu-header {
+      background: #DDA0DD;
+      border-radius: 10px;
+      padding: 5px 10px;
+      color: #FFF;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 20px 0;
+      color: #FFF;
+    }
+    
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-align: center;
+      color: #FFF;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    
+    a:hover {
+      background: #E6E6FA;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Menu Principal</h1>
+    <ul class="menu">
+      <li class="menu-item">
+        <div class="menu-header">Listar</div>
+        <ul class="sub-menu">
+          <li><a href="LAutores.php">Autores</a></li>
+          <li><a href="LAutorias.php">Autorias</a></li>
+          <li><a href="LLivros.php">Livros</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <div class="menu-header">Cadastrar</div>
+        <ul class="sub-menu">
+          <li><a href="CAutores.php">Autores</a></li>
+          <li><a href="CAutorias.php">Autorias</a></li>
+          <li><a href="CLivros.php">Livros</a></li>
+        </ul>
+      </li>
+          <li class="menu-item">
+            <div class="menu-header">Excluir</div>
+            <ul class="sub-menu">
+              <li><a href="EAutores.php">Autores</a></li>
+              <li><a href="EAutoria.php">Autorias</a></li>
+              <li><a href="ELivros.php">Livros</a></li>
+               </ul>
+      </li>
+          <li class="menu-item">
+            <div class="menu-header">Pesquisar</div>
+            <ul class="sub-menu">
+              <li><a href="PAutores.php">Autores</a></li>
+              <li><a href="PAutoria.php">Autorias</a></li>
+              <li><a href="PLivro.php">Livros</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <div class="menu-header">Alterar</div>
+        <ul class="sub-menu">
+          <li><a href="AAutores.php">Autores</a></li>
+          <li><a href="AAutorias.php">Autorias</a></li>
+          <li><a href="ALivros.php">Livros</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
